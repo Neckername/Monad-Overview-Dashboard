@@ -12,7 +12,7 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 | 6 | Monad Overview - Daily Active Senders vs Receivers (public datetime interval) | 6924982 | public | 01KMYXV2D7SD58J5XA8JC9YZTR |
 | 7 | Monad Overview - Transaction Plot (public datetime) | 6909735 | public | 01KMM8QRVMXD8Q9XEBVD3W24DF |
 | 8 | Monad Overview - Address Activity (public datetime interval) | 6924983 | public | 01KMYXV2HJT9VEY2BJQRGHD7AQ |
-| 9 | Monad Overview - Gas Fees | 6904862 | private | 01KMYXG03H6PDSPJJNN35P9GT6 |
+| 9 | Monad Overview - Gas Fees (public datetime interval) | 6925095 | public | 01KMYZ9QE5PT2YCB5S800K4JBH |
 | 10 | Monad Overview - Contract Deployments (public datetime interval) | 6924984 | public | 01KMYXV2NTWSM53RWQBMJNFJ1A |
 | 11 | Monad Overview - Transactions Per Second (public datetime interval) | 6924985 | public | 01KMYXV2T2R3ZMTGHX0E3X0G78 |
 | 12 | Monad Overview - Stablecoin Composition | 6904878 | public | 01KMJ8MAY008T0MB7SSACPNCNH |
@@ -24,6 +24,7 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 - Queries 11 and 12 were created as public because Dune returned `max_number_of_private_queries_reached` when attempting to create additional private queries.
 - On 2026-03-26, queries 5, 6, 7, 8, and 10 were moved to public datetime clones (`6909733`, `6909734`, `6909735`, `6909736`, `6909737`) so dashboard date controls stay on datetime.
 - On 2026-03-30, queries 6, 8, 10, and 11 were moved to public datetime+interval clones (`6924982`, `6924983`, `6924984`, `6924985`) so both interval and datetime selectors work together.
+- On 2026-03-30, query 9 was moved to a public datetime+interval clone (`6925095`) to align with the same dashboard selectors.
 - Parameterized queries use:
   - `Interval` enum: `day`, `week`, `month`
   - `StartDate` datetime default: `2025-05-14 00:00:00`
