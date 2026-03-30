@@ -9,12 +9,12 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 | 3 | Monad Overview - TVL | 6904850 | private | 01KMJ8BBMVHV5R8KZD6EXP2Q1Z |
 | 4 | Monad Overview - Smart Contract Deployers | 6904851 | private | 01KMJFE4B4B8DJMPW19J5AGMHC |
 | 5 | Monad Overview - Volume Analysis (public datetime) | 6909733 | public | 01KMM8QRV7YRBDD864QZKH4GC3 |
-| 6 | Monad Overview - Daily Active Senders vs Receivers (public datetime) | 6909734 | public | 01KMM8QRVF4EMVKG9XMK1M27A1 |
+| 6 | Monad Overview - Daily Active Senders vs Receivers (public datetime interval) | 6924982 | public | 01KMYXV2D7SD58J5XA8JC9YZTR |
 | 7 | Monad Overview - Transaction Plot (public datetime) | 6909735 | public | 01KMM8QRVMXD8Q9XEBVD3W24DF |
-| 8 | Monad Overview - Address Activity (public datetime) | 6909736 | public | 01KMM8QRVMSD9N8524QE49NZFC |
-| 9 | Monad Overview - Gas Fees | 6904862 | private | 01KMJBYF34JJH0NPTBWHQ8AXCT |
-| 10 | Monad Overview - Contract Deployments (public datetime) | 6909737 | public | 01KMM8QRVHMYTSAPK5JWH65T3K |
-| 11 | Monad Overview - Transactions Per Second | 6904877 | public | 01KMJ8MASNXZVXHM4R04D6YGWC |
+| 8 | Monad Overview - Address Activity (public datetime interval) | 6924983 | public | 01KMYXV2HJT9VEY2BJQRGHD7AQ |
+| 9 | Monad Overview - Gas Fees | 6904862 | private | 01KMYXG03H6PDSPJJNN35P9GT6 |
+| 10 | Monad Overview - Contract Deployments (public datetime interval) | 6924984 | public | 01KMYXV2NTWSM53RWQBMJNFJ1A |
+| 11 | Monad Overview - Transactions Per Second (public datetime interval) | 6924985 | public | 01KMYXV2T2R3ZMTGHX0E3X0G78 |
 | 12 | Monad Overview - Stablecoin Composition | 6904878 | public | 01KMJ8MAY008T0MB7SSACPNCNH |
 | 13 | Monad Overview - Total Contracts Deployed | 6905338 | public | 01KMJEZHQJQ3P8EE839XH303DN |
 | 14 | Monad Overview - Smart Contract Deployers (Strict Tx Creation) | 6905474 | public | 01KMJG7Y158ED2D4HPAYGMBH4Q |
@@ -23,6 +23,7 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 
 - Queries 11 and 12 were created as public because Dune returned `max_number_of_private_queries_reached` when attempting to create additional private queries.
 - On 2026-03-26, queries 5, 6, 7, 8, and 10 were moved to public datetime clones (`6909733`, `6909734`, `6909735`, `6909736`, `6909737`) so dashboard date controls stay on datetime.
+- On 2026-03-30, queries 6, 8, 10, and 11 were moved to public datetime+interval clones (`6924982`, `6924983`, `6924984`, `6924985`) so both interval and datetime selectors work together.
 - Parameterized queries use:
   - `Interval` enum: `day`, `week`, `month`
   - `StartDate` datetime default: `2025-05-14 00:00:00`
