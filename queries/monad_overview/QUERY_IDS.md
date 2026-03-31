@@ -1,6 +1,6 @@
 # Monad Overview Saved Queries
 
-Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
+Created on 2026-03-25 (America/New_York). Updated on 2026-03-30.
 
 | # | Query Name | Query ID | Privacy | Last Validation Execution ID |
 |---|---|---:|---|---|
@@ -18,6 +18,7 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 | 12 | Monad Overview - Stablecoin Composition | 6904878 | public | 01KMJ8MAY008T0MB7SSACPNCNH |
 | 13 | Monad Overview - Total Contracts Deployed | 6905338 | public | 01KMJEZHQJQ3P8EE839XH303DN |
 | 14 | Monad Overview - Smart Contract Deployers (Strict Tx Creation) | 6905474 | public | 01KMJG7Y158ED2D4HPAYGMBH4Q |
+| 15 | Monad Overview - DEX Volume Top 9 + Other (USD, % of Total) | 6925181 | public | 01KMZ0D16BAC4EPAEXZD52VA1S |
 
 ## Notes
 
@@ -25,6 +26,7 @@ Created on 2026-03-25 (America/New_York). Updated on 2026-03-26.
 - On 2026-03-26, queries 5, 6, 7, 8, and 10 were moved to public datetime clones (`6909733`, `6909734`, `6909735`, `6909736`, `6909737`) so dashboard date controls stay on datetime.
 - On 2026-03-30, queries 6, 8, 10, and 11 were moved to public datetime+interval clones (`6924982`, `6924983`, `6924984`, `6924985`) so both interval and datetime selectors work together.
 - On 2026-03-30, query 9 was moved to a public datetime+interval clone (`6925095`) to align with the same dashboard selectors.
+- On 2026-03-30, query 15 was added as a new public datetime+interval DEX volume share query (`6925181`) for Monad top-9 DEX + `other` composition.
 - Parameterized queries use:
   - `Interval` enum: `day`, `week`, `month`
   - `StartDate` datetime default: `2025-05-14 00:00:00`
